@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs /home/middleman/foss/gnu-efi.git/copy-to-github.sh
+
+[Service]
+Type=simple
+User=middleman
+WorkingDirectory=/home/middleman/foss/gnu-efi.git
+ExecStart=/home/middleman/foss/gnu-efi.git/copy-to-github.sh
+
+[Install]
+WantedBy=mulit-user.target

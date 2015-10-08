@@ -1,0 +1,9 @@
+[Unit]
+Description=Update mirror-gnu-efi every hour and on boot
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=60min
+
+[Install]
+WantedBy=timers.target
